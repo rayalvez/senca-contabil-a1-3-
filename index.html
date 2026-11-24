@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Senca Contábil</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#inicio">SENCA <span>CONTÁBIL</span></a><nav><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#orcamento">Orçamento</a><a href="#contato">Contato</a><a href="#depoimentos">Depoimentos</a><a href="#blog">Blog</a></nav></div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap"><p class="eyebrow">ASSESSORIA CONTÁBIL • CHAPECÓ, SC</p><h1>Contabilidade leve,<br>negócio no topo.</h1><p>Conte com uma assessoria próxima para organizar as finanças e cuidar das obrigações da sua empresa.</p><a class="btn" href="#orcamento">Solicitar orçamento</a></div></section>
+<section id="sobre" class="wrap section"><p class="eyebrow">QUEM SOMOS</p><h2>Seu negócio em boas mãos</h2><p>Desde 2014, a Senca Contábil oferece atendimento personalizado a empreendedores e empresas de Chapecó. Nossa missão é simplificar a gestão contábil e tributária com ética, transparência e tecnologia.</p></section>
+<section id="servicos" class="band"><div class="wrap section"><p class="eyebrow">NOSSO CATÁLOGO</p><h2>Serviços contábeis</h2><p>Conheça as soluções disponíveis.</p><p id="status-servicos" role="status">Carregando serviços...</p><div id="lista-servicos" class="cards"></div></div></section>
+<section id="orcamento" class="wrap section"><p class="eyebrow">SOLICITAÇÃO</p><h2>Solicite um orçamento</h2><p>Preencha seus dados e informe o serviço de interesse.</p>
+<form id="form-orcamento"><div class="fields">
+<label>Nome completo<input name="nome" required maxlength="120" autocomplete="name"></label>
+<label>E-mail<input name="email" type="email" required maxlength="160" autocomplete="email"></label>
+<label>Telefone<input name="telefone" type="tel" required maxlength="30" autocomplete="tel"></label>
+<label>Serviço<select name="servico_id" id="select-servico" required disabled><option value="">Carregando...</option></select></label>
+<label>Endereço<input name="endereco" required maxlength="180"></label>
+<label>Cidade<input name="cidade" required maxlength="100"></label>
+<label>UF<select name="uf" required><option value="">Selecione</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option></select></label>
+<label>Data desejada<input name="data_desejada" type="date" required></label>
+<label class="full">Observações<textarea name="observacoes" rows="3" maxlength="2000"></textarea></label>
+</div><button type="submit" id="enviar-orcamento" disabled>Enviar orçamento</button><p class="status" id="status-orcamento" role="status"></p></form></section>
+<section id="contato" class="band"><div class="wrap section"><p class="eyebrow">FALE CONOSCO</p><h2>Entre em contato</h2><p>Envie suas dúvidas para a Senca Contábil.</p><form id="form-contato"><div class="fields"><label>Nome<input name="nome" required maxlength="120" autocomplete="name"></label><label>E-mail<input name="email" type="email" required maxlength="160" autocomplete="email"></label><label class="full">Mensagem<textarea name="mensagem" rows="5" required maxlength="2000"></textarea></label></div><button type="submit">Enviar mensagem</button><p class="status" id="status-contato" role="status"></p></form></div></section>
+<section id="depoimentos" class="wrap section"><p class="eyebrow">NOSSOS CLIENTES</p><h2>Depoimentos</h2><div class="cards"><article class="card"><p>“A Senca Contábil simplificou toda a parte fiscal da minha loja.”</p><strong>Marcelo Tondo</strong></article><article class="card"><p>“A equipe é ágil e sempre disponível para tirar dúvidas.”</p><strong>Patrícia Souza</strong></article><article class="card"><p>“Com a consultoria tributária consegui migrar de regime e reduzir os impostos da minha empresa de forma totalmente legal.”</p><strong>Joaquim Oliveira</strong></article></div></section>
+<section id="blog" class="band"><div class="wrap section"><p class="eyebrow">CONTEÚDOS</p><h2>Blog</h2><div class="cards"><article class="card"><h3>Obrigações do MEI</h3><p>Organização financeira, pagamento do DAS e atenção à declaração anual.</p></article><article class="card"><h3>Planejamento tributário</h3><p>Conhecer as opções de enquadramento ajuda a planejar os impostos do negócio.</p></article></div></div></section>
+</main>
+<footer><div class="wrap"><strong>Senca Contábil</strong><p>Projeto acadêmico • Fundamentos ao Desenvolvimento Web • UNOESC</p><p>Desenvolvido por Ray Vasconcelos Alves</p></div></footer>
+</body></html>
